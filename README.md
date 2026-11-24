@@ -4,6 +4,8 @@ Primeira interface web da biblioteca digital da UniFECAF, desenvolvida com HTML 
 
 **Site:** https://juanpablow.github.io/biblioteca-unifecaf/
 
+**Vídeo pitch:** https://youtu.be/8mk4kACmOpg
+
 ## Estrutura
 
 ```
