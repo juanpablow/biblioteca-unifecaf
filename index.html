@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <a class="skip-link" href="#biblioteca">Ir para o conteúdo</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#inicio" aria-label="Biblioteca Digital UniFECAF - início">
+      <a class="logo" href="#topo" aria-label="Biblioteca Digital UniFECAF - início">
         <span class="logo-mark" aria-hidden="true">U</span>
         <span class="logo-text">Biblioteca <strong>UniFECAF</strong></span>
       </a>
@@ -22,132 +22,142 @@
       </label>
       <nav class="main-nav" aria-label="Navegação principal">
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#categorias">Categorias</a></li>
-          <li><a href="#destaques">Destaques</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#biblioteca" class="active">Biblioteca</a></li>
+          <li><a href="#livros">Livros</a></li>
+          <li><a href="#unidades">Unidades</a></li>
+          <li><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="conteudo">
-    <section class="hero" id="inicio">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Biblioteca Digital</p>
-          <h1>Todo o conhecimento da UniFECAF em um só lugar</h1>
-          <p class="lead">Encontre livros, artigos e materiais de apoio para os seus estudos, a qualquer hora e de qualquer dispositivo.</p>
-          <form class="search" role="search" action="#destaques">
-            <label for="busca" class="visually-hidden">Buscar livros</label>
-            <input type="search" id="busca" name="busca" placeholder="Busque por título, autor ou assunto">
-            <button type="submit" class="btn btn-accent">Buscar</button>
-          </form>
+  <main>
+    <section class="hero" id="topo">
+      <img src="assets/imagens/banner-topo.svg" alt="Ilustração de estantes repletas de livros coloridos" width="1600" height="520">
+      <div class="hero-overlay">
+        <h1>Biblioteca Digital UniFECAF</h1>
+        <p>Livros, materiais acadêmicos e conteúdos de apoio à sua aprendizagem.</p>
+      </div>
+    </section>
+
+    <section class="section section-mid" id="biblioteca" aria-labelledby="titulo-biblioteca">
+      <div class="container">
+        <h2 id="titulo-biblioteca">Sobre a nossa biblioteca</h2>
+        <div class="about">
+          <p>A biblioteca digital reúne livros, materiais acadêmicos e conteúdos de apoio para que o estudante estude no seu ritmo, de qualquer lugar. Aqui você visualiza os títulos disponíveis, identifica as áreas do conhecimento e encontra os principais destaques do acervo.</p>
+          <img src="assets/imagens/sobre.svg" alt="Ilustração de uma mesa de estudos com livros" width="640" height="360">
+          <p>A proposta é oferecer uma experiência simples e intuitiva, que acompanha o aluno do primeiro acesso à pesquisa para trabalhos e provas, com informações claras sobre os serviços disponíveis e as unidades de atendimento.</p>
         </div>
-        <img class="hero-img" src="assets/imagens/hero.svg" alt="Ilustração de uma estante com livros coloridos" width="520" height="400">
-      </div>
-    </section>
-
-    <section class="section" id="categorias" aria-labelledby="titulo-categorias">
-      <div class="container">
-        <h2 id="titulo-categorias">Categorias</h2>
-        <p class="section-sub">Navegue pelas áreas do conhecimento.</p>
-        <ul class="grid grid-4 categories">
-          <li><a class="card category" href="#destaques"><span class="icon" aria-hidden="true">💻</span><h3>Tecnologia</h3><p>Programação, redes e dados</p></a></li>
-          <li><a class="card category" href="#destaques"><span class="icon" aria-hidden="true">📊</span><h3>Gestão</h3><p>Negócios e finanças</p></a></li>
-          <li><a class="card category" href="#destaques"><span class="icon" aria-hidden="true">🩺</span><h3>Saúde</h3><p>Enfermagem e bem-estar</p></a></li>
-          <li><a class="card category" href="#destaques"><span class="icon" aria-hidden="true">🧠</span><h3>Humanas</h3><p>Psicologia e educação</p></a></li>
+        <ul class="minis">
+          <li><img src="assets/imagens/mini-1.svg" alt="Ilustração de livros empilhados" width="300" height="220" loading="lazy"></li>
+          <li><img src="assets/imagens/mini-2.svg" alt="Ilustração de um notebook" width="300" height="220" loading="lazy"></li>
+          <li><img src="assets/imagens/mini-3.svg" alt="Ilustração de um livro aberto" width="300" height="220" loading="lazy"></li>
+          <li><img src="assets/imagens/mini-4.svg" alt="Ilustração de uma pessoa lendo" width="300" height="220" loading="lazy"></li>
         </ul>
       </div>
     </section>
 
-    <section class="section section-alt" id="destaques" aria-labelledby="titulo-destaques">
+    <section class="banner" aria-label="Destaque visual">
+      <img src="assets/imagens/banner-meio.svg" alt="Ilustração decorativa de livros sobre fundo laranja" width="1600" height="360" loading="lazy">
+    </section>
+
+    <section class="section section-mid" id="livros" aria-labelledby="titulo-livros">
       <div class="container">
-        <h2 id="titulo-destaques">Livros em destaque</h2>
-        <p class="section-sub">Os títulos mais acessados pelos estudantes.</p>
-        <ul class="grid grid-3 books">
+        <h2 id="titulo-livros">Nossos livros</h2>
+        <ul class="grid books">
           <li>
             <article class="card book">
+              <h3>Design Web na Prática</h3>
               <img src="assets/imagens/capa-1.svg" alt="Capa do livro Design Web" width="300" height="420" loading="lazy">
-              <div class="book-body"><span class="tag">Tecnologia</span><h3>Design Web na Prática</h3><p>HTML, CSS e responsividade do zero.</p><a class="btn btn-primary" href="#contato">Ver detalhes</a></div>
+              <p>HTML, CSS e responsividade do zero ao primeiro site.</p>
+              <a class="btn" href="#contatos">Saiba mais</a>
             </article>
           </li>
           <li>
             <article class="card book">
+              <h3>Lógica e Algoritmos</h3>
               <img src="assets/imagens/capa-2.svg" alt="Capa do livro Algoritmos" width="300" height="420" loading="lazy">
-              <div class="book-body"><span class="tag">Tecnologia</span><h3>Lógica e Algoritmos</h3><p>Fundamentos para resolver problemas.</p><a class="btn btn-primary" href="#contato">Ver detalhes</a></div>
+              <p>Fundamentos para resolver problemas com programação.</p>
+              <a class="btn" href="#contatos">Saiba mais</a>
             </article>
           </li>
           <li>
             <article class="card book">
+              <h3>Banco de Dados</h3>
               <img src="assets/imagens/capa-3.svg" alt="Capa do livro Banco de Dados" width="300" height="420" loading="lazy">
-              <div class="book-body"><span class="tag">Tecnologia</span><h3>Banco de Dados</h3><p>Modelagem e consultas em SQL.</p><a class="btn btn-primary" href="#contato">Ver detalhes</a></div>
+              <p>Modelagem de dados e consultas em SQL.</p>
+              <a class="btn" href="#contatos">Saiba mais</a>
             </article>
           </li>
           <li>
             <article class="card book">
+              <h3>Gestão de Projetos</h3>
               <img src="assets/imagens/capa-4.svg" alt="Capa do livro Gestão" width="300" height="420" loading="lazy">
-              <div class="book-body"><span class="tag">Gestão</span><h3>Gestão de Projetos</h3><p>Planejamento, equipes e entregas.</p><a class="btn btn-primary" href="#contato">Ver detalhes</a></div>
+              <p>Planejamento, equipes e entregas em projetos.</p>
+              <a class="btn" href="#contatos">Saiba mais</a>
             </article>
           </li>
           <li>
             <article class="card book">
+              <h3>Introdução à Psicologia</h3>
               <img src="assets/imagens/capa-5.svg" alt="Capa do livro Psicologia" width="300" height="420" loading="lazy">
-              <div class="book-body"><span class="tag">Humanas</span><h3>Introdução à Psicologia</h3><p>Comportamento e processos mentais.</p><a class="btn btn-primary" href="#contato">Ver detalhes</a></div>
+              <p>Comportamento humano e processos mentais.</p>
+              <a class="btn" href="#contatos">Saiba mais</a>
             </article>
           </li>
           <li>
             <article class="card book">
+              <h3>Saúde Coletiva</h3>
               <img src="assets/imagens/capa-6.svg" alt="Capa do livro Saúde" width="300" height="420" loading="lazy">
-              <div class="book-body"><span class="tag">Saúde</span><h3>Saúde Coletiva</h3><p>Prevenção e cuidado em comunidade.</p><a class="btn btn-primary" href="#contato">Ver detalhes</a></div>
+              <p>Prevenção e cuidado em saúde na comunidade.</p>
+              <a class="btn" href="#contatos">Saiba mais</a>
             </article>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="servicos" aria-labelledby="titulo-servicos">
+    <section class="section section-dark" id="unidades" aria-labelledby="titulo-unidades">
       <div class="container">
-        <h2 id="titulo-servicos">Serviços da biblioteca</h2>
-        <p class="section-sub">Apoio para toda a sua jornada acadêmica.</p>
-        <ul class="grid grid-3">
-          <li class="card service"><span class="icon" aria-hidden="true">📖</span><h3>Acervo digital</h3><p>Leia livros e periódicos online, sem filas.</p></li>
-          <li class="card service"><span class="icon" aria-hidden="true">🧾</span><h3>Normas ABNT</h3><p>Orientação para formatar trabalhos e referências.</p></li>
-          <li class="card service"><span class="icon" aria-hidden="true">🙋</span><h3>Atendimento</h3><p>Equipe pronta para ajudar nas suas pesquisas.</p></li>
-        </ul>
+        <h2 id="titulo-unidades">As unidades</h2>
+        <article class="unit">
+          <img src="assets/imagens/unidade-1.svg" alt="Ilustração da Unidade 1" width="640" height="440" loading="lazy">
+          <div>
+            <h3>Unidade 1</h3>
+            <p>Espaço de estudo e atendimento presencial, com apoio da equipe para pesquisa no acervo e orientações sobre normas de trabalhos acadêmicos.</p>
+          </div>
+        </article>
+        <article class="unit">
+          <img src="assets/imagens/unidade-2.svg" alt="Ilustração da Unidade 2" width="640" height="440" loading="lazy">
+          <div>
+            <h3>Unidade 2</h3>
+            <p>Ambiente voltado à leitura e ao estudo em grupo, com acesso ao acervo digital e a conteúdos de apoio à aprendizagem.</p>
+          </div>
+        </article>
+        <article class="unit">
+          <img src="assets/imagens/unidade-3.svg" alt="Ilustração da Unidade 3" width="640" height="440" loading="lazy">
+          <div>
+            <h3>Unidade 3</h3>
+            <p>Ponto de apoio para consulta de materiais e esclarecimento de dúvidas sobre os serviços oferecidos pela biblioteca.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="cta" aria-labelledby="titulo-cta">
-      <div class="container cta-inner">
-        <h2 id="titulo-cta">Pronto para começar a estudar?</h2>
-        <a class="btn btn-accent" href="#inicio">Acessar a biblioteca</a>
+    <section class="section section-light" id="contatos" aria-labelledby="titulo-contatos">
+      <div class="container contact">
+        <div>
+          <h2 id="titulo-contatos">Contatos</h2>
+          <p>Fale com a equipe da biblioteca para tirar dúvidas sobre o acervo, o acesso aos materiais e os serviços disponíveis.</p>
+          <p><strong>E-mail:</strong> biblioteca@exemplo.edu.br<br><strong>Atendimento:</strong> de segunda a sexta-feira</p>
+        </div>
+        <img src="assets/imagens/contato.svg" alt="Ilustração de um envelope" width="560" height="380" loading="lazy">
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="contato">
-    <div class="container footer-inner">
-      <div>
-        <h2 class="footer-title">Biblioteca Digital UniFECAF</h2>
-        <p>Projeto acadêmico da disciplina Design Web.</p>
-      </div>
-      <div>
-        <h3>Contato</h3>
-        <p>biblioteca@exemplo.edu.br</p>
-        <p>Seg a Sex, 8h às 22h</p>
-      </div>
-      <div>
-        <h3>Links</h3>
-        <ul>
-          <li><a href="#categorias">Categorias</a></li>
-          <li><a href="#destaques">Destaques</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="copy">© 2026 Biblioteca Digital UniFECAF — projeto acadêmico.</p>
+  <footer class="site-footer">
+    <p>© 2026 Biblioteca Digital UniFECAF — projeto acadêmico.</p>
   </footer>
 </body>
 </html>
